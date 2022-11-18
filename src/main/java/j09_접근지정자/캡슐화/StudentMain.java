@@ -11,5 +11,6 @@ public class StudentMain {
 
         s1.printInfo();
         s2.printInfo();
+        System.out.println(s1.getName());
     }
 }
