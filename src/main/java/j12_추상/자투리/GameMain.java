@@ -40,44 +40,54 @@ public class GameMain {
 
                     if (str.equals("1")) {
                         a = random.nextInt();
-                        System.out.println(a);
                         if(a < 4){
                             RMove.Up(gameName);
                             count--;
+                            a = 0;
                             System.out.println();
                         }else{
                             move.Up(gameName);
                             count++;
+                            a = 0;
                             System.out.println();
                         }
                     } else if (str.equals("2")) {
+                        a = random.nextInt();
                         if(a < 4){
                             RMove.Right(gameName);
                             count--;
+                            a = 0;
                             System.out.println();
                         }else{
                             move.Right(gameName);
                             count++;
+                            a = 0;
                             System.out.println();
                         }
                     } else if (str.equals("3")) {
+                        a = random.nextInt();
                         if(a < 4){
                             RMove.Left(gameName);
                             count--;
+                            a = 0;
                             System.out.println();
                         }else{
                             move.Left(gameName);
                             count++;
+                            a = 0;
                             System.out.println();
                         }
                     } else if (str.equals("4")) {
+                        a = random.nextInt();
                         if(a < 4){
                             RMove.Down(gameName);
                             count--;
+                            a = 0;
                             System.out.println();
                         }else{
                             move.Down(gameName);
                             count++;
+                            a = 0;
                             System.out.println();
                         }
                     } else if (str.equals("5")) {
