@@ -9,11 +9,11 @@ public class StudentList {
         List<Student> students = new ArrayList<Student>();
         // 업캐스팅 하여 사용
 
-        students.add(new Student(20220001, "강동욱", 21));
-        students.add(new Student(20220002, "이승아", 22));
-        students.add(new Student(20220003, "문경원", 23));
-        students.add(new Student(20220004, "홍지혜", 24));
-        students.add(new Student(20220005, "고동완", 25));
+        students.add(new Student(20220001, "강동욱", 21, null));
+        students.add(new Student(20220002, "이승아", 22, null));
+        students.add(new Student(20220003, "문경원", 23, null));
+        students.add(new Student(20220004, "홍지혜", 24, null));
+        students.add(new Student(20220005, "고동완", 25, null));
 
         Student student2 = students.get(0);
         System.out.println(student2);

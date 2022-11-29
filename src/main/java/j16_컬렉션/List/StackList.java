@@ -34,6 +34,8 @@ public class StackList {
         stack.add("황성민");
         stack.add("박준현");
 
+//        System.out.println(stack);
+
         ArrayList<String> copyList = new ArrayList<String>();
 
         int size = stack.size();
