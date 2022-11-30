@@ -1,4 +1,4 @@
-package j16_컬렉션.Set;
+package j16_컬렉션.Map;
 
 import java.util.HashMap;
 import java.util.Map;
