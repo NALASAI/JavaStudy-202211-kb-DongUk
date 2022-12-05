@@ -9,7 +9,7 @@ public class StringMethod2 {
 		
 		// 기존 문자열을 대체할 String 생성
 		String tempRoles = roles;
-		// 0번부터 ","의 위치 전까지 저장 | 만약 "," 을 찾으면 -1을 주고 찾지 못할땐 대체된 문자열의 길이를 준다
+		// 0번부터 ","의 위치 전까지 저장 | 만약 ","의 위치를 찾지 못하였을때 -1을 부여해서 거짓으로 만든 후 tempRoles.length()로 반환된다.
 		roleArray[0] = tempRoles.substring(0, tempRoles.indexOf(",") != -1 ? tempRoles.indexOf(",") : tempRoles.length());
 		// 대체된 문자열의 데이터 변경(","을 찾은위치 + 2);
 		tempRoles = tempRoles.substring(tempRoles.indexOf(",") + 2);
