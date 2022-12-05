@@ -1,7 +1,11 @@
 package j20_함수형인터페이스;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
 import java.util.function.Consumer;
 
 public class Main3 {
@@ -36,6 +40,41 @@ public class Main3 {
 		forEachTest(n -> {System.out.println(n);}, names);
 		// accpets(x) 를 @Override 한것 => n -> {System.out.println(n);} 
 		// accpets 에 들어가서 출력되는 내용 System.out.println(n);
+		
+		System.out.println();
+		
+		/*-----------------------------------------------------------------------------------------------*/
+		
+		// Map 함수 반복
+		Map<String, String> subject = new HashMap<>();
+		
+		subject.put("java", "자바");
+		subject.put("python", "파이썬");
+		subject.put("javascript", "자바스크립트");
+		subject.put("C", "C언어");
+		subject.put("Node.js", "노드제이에스");
+		
+		// 1. Set<String>
+		System.out.println("Set<String>");
+		Set<String> keySet = subject.keySet();
+		keySet.forEach(key -> {
+			System.out.println(subject.get(key));
+		});
+		
+		System.out.println();
+		// 2. Set<Entry<String, String>>
+		System.out.println("Set<Entry<String, String>>");
+		Set<Entry<String, String>> entrySet = subject.entrySet();
+		entrySet.forEach(entry ->{
+			System.out.println(entry.getKey() + " : " + entry.getValue());
+		});
+	
+		System.out.println();
+		// [2]번 방법의 축약형
+		System.out.println("[2]번 방법의 축약형");
+		subject.forEach((key, value) -> {
+			System.out.println(key + " : " + value);
+		});
+		
 	}
-
 }
