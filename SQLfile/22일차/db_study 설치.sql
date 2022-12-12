@@ -44,7 +44,7 @@ CREATE TABLE IF NOT EXISTS `order_mst` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- 테이블 데이터 db_study.order_mst:~0 rows (대략적) 내보내기
+-- 테이블 데이터 db_study.order_mst:~1 rows (대략적) 내보내기
 DELETE FROM `order_mst`;
 INSERT INTO `order_mst` (`id`, `user_id`) VALUES
 	(1, 1);
@@ -182,7 +182,7 @@ CREATE TABLE IF NOT EXISTS `user_mst` (
   UNIQUE KEY `username` (`username`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- 테이블 데이터 db_study.user_mst:~3 rows (대략적) 내보내기
+-- 테이블 데이터 db_study.user_mst:~4 rows (대략적) 내보내기
 DELETE FROM `user_mst`;
 INSERT INTO `user_mst` (`id`, `username`, `password`, `name`, `email`, `create_date`, `update_date`) VALUES
 	(1, 'aaa', '1234', '강동욱', 'ebyul96428@naver.com', '2022-12-09 11:21:52', '2022-12-09 11:21:52'),
@@ -233,7 +233,7 @@ CREATE TABLE IF NOT EXISTS `course_dtl` (
   UNIQUE KEY `course_name` (`course_name`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- 테이블 데이터 db_study2.course_dtl:~0 rows (대략적) 내보내기
+-- 테이블 데이터 db_study2.course_dtl:~4 rows (대략적) 내보내기
 DELETE FROM `course_dtl`;
 INSERT INTO `course_dtl` (`id`, `course_name`) VALUES
 	(3, 'c'),
@@ -251,7 +251,7 @@ CREATE TABLE IF NOT EXISTS `course_mst` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- 테이블 데이터 db_study2.course_mst:~0 rows (대략적) 내보내기
+-- 테이블 데이터 db_study2.course_mst:~7 rows (대략적) 내보내기
 DELETE FROM `course_mst`;
 INSERT INTO `course_mst` (`id`, `course_id`, `student_id`, `status_id`) VALUES
 	(1, 1, 1, 1),
@@ -271,7 +271,7 @@ CREATE TABLE IF NOT EXISTS `emp_mst` (
   UNIQUE KEY `name` (`name`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- 테이블 데이터 db_study2.emp_mst:~0 rows (대략적) 내보내기
+-- 테이블 데이터 db_study2.emp_mst:~4 rows (대략적) 내보내기
 DELETE FROM `emp_mst`;
 INSERT INTO `emp_mst` (`id`, `name`) VALUES
 	(1, '문성현'),
@@ -288,7 +288,7 @@ CREATE TABLE IF NOT EXISTS `score_mst` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- 테이블 데이터 db_study2.score_mst:~0 rows (대략적) 내보내기
+-- 테이블 데이터 db_study2.score_mst:~5 rows (대략적) 내보내기
 DELETE FROM `score_mst`;
 INSERT INTO `score_mst` (`id`, `course_id`, `score`) VALUES
 	(1, 1, 80),
@@ -305,7 +305,7 @@ CREATE TABLE IF NOT EXISTS `status_mst` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- 테이블 데이터 db_study2.status_mst:~0 rows (대략적) 내보내기
+-- 테이블 데이터 db_study2.status_mst:~2 rows (대략적) 내보내기
 DELETE FROM `status_mst`;
 INSERT INTO `status_mst` (`id`, `status`) VALUES
 	(1, '수강'),
@@ -321,7 +321,7 @@ CREATE TABLE IF NOT EXISTS `student_mst` (
   UNIQUE KEY `name` (`name`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- 테이블 데이터 db_study2.student_mst:~0 rows (대략적) 내보내기
+-- 테이블 데이터 db_study2.student_mst:~5 rows (대략적) 내보내기
 DELETE FROM `student_mst`;
 INSERT INTO `student_mst` (`id`, `name`, `emp_id`) VALUES
 	(1, '신경수', 1),
